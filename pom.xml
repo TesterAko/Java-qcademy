@@ -13,5 +13,17 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.transferwise.tasks</groupId>
+            <artifactId>tw-tasks-executor</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.transferwise.tasks</groupId>
+            <artifactId>tw-tasks-executor</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+    </dependencies>
 
 </project>
