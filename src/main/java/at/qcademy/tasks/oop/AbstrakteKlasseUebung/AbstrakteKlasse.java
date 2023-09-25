@@ -1,4 +1,4 @@
-package OOP.AbstrakteKlasseUebung;
+package at.qcademy.tasks.oop.AbstrakteKlasseUebung;
 
 public class AbstrakteKlasse {
 
@@ -26,7 +26,7 @@ abstract class Fahrzeug {
     }
 }
 
-class Auto extends Fahrzeug implements Beschleunigbar {
+class Auto extends Fahrzeug implements OOP.AbstrakteKlasseUebung.Beschleunigbar {
     //Unterklasse Auto die von der abstrakten Klasse Fahrzeug erbt
     // also wird Auto die Attribute bzw. die Methoden von abstrakten Klasse Fahrzeug übernehmen
     private int anzahlTueren;
@@ -68,7 +68,7 @@ class Auto extends Fahrzeug implements Beschleunigbar {
   }
 }
 
-class Motorrad extends Fahrzeug implements Beschleunigbar {
+class Motorrad extends Fahrzeug implements OOP.AbstrakteKlasseUebung.Beschleunigbar {
     //implementiere Interface Beschleunigbar
     public int raederMotorrad;
 
