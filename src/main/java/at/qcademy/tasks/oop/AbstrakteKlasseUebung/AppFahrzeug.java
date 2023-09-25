@@ -1,8 +1,6 @@
-package at.qcademy.tasks.oop;
+package at.qcademy.tasks.oop.AbstrakteKlasseUebung;
 
 
-import at.qcademy.tasks.oop.AbstrakteKlasseUebung.Autonew;
-import at.qcademy.tasks.oop.AbstrakteKlasseUebung.Motorrad;
 
 public class AppFahrzeug {
     public static void main(String[] args) {
