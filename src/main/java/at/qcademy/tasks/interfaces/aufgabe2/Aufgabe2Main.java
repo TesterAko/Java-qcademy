@@ -6,7 +6,7 @@ import static at.qcademy.tasks.interfaces.aufgabe2.Verschluesselung.verschluesse
 public class Aufgabe2Main {
     public static void main(String[] args) {
         // Beispiel für die Caesar-Verschiebung mit einer Verschiebung von Index Wert 3 Buchstaben
-        CaesarChiffrierung caesarSchluessel = new CaesarChiffrierung(3);
+        CaesarChiffrierung caesarSchluessel = new CaesarChiffrierung(5);
         String klartext = "hello";
         String verschluesselterText = verschluesseln(klartext, caesarSchluessel);
         String entschluesselterText = entschluesseln(verschluesselterText, caesarSchluessel);

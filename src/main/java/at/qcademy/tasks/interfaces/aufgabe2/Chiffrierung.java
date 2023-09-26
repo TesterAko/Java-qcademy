@@ -1,7 +1,7 @@
 package at.qcademy.tasks.interfaces.aufgabe2;
 
 interface Chiffrierung {
-    char chiffrieren(char zeichen);// Inter
+    char chiffrieren(char zeichen);
     char dechiffrieren(char zeichen);
 }
 /**
