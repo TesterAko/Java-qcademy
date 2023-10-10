@@ -3,11 +3,11 @@ package OOP.Radio;
 public class Radio {
 
     //Attribute
-    static boolean radioAn = true;
+    boolean radioAn = true;
 
-    static int lautStärke = 2;
+    int lautStärke = 2;
 
-    static double frequenz = 98.4;
+    double frequenz = 98.4;
 
 
     //Konstruktor
