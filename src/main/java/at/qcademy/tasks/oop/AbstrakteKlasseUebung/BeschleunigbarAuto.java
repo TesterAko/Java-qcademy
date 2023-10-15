@@ -3,7 +3,6 @@ package at.qcademy.tasks.oop.AbstrakteKlasseUebung;
 public interface Beschleunigbar {
 
     public void beschleunigen();
-    //es wird nicht genau deklariert wie es gemacht wird
 
     public void fährt();
 

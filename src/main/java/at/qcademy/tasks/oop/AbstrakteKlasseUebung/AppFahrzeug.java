@@ -1,33 +1,24 @@
 package at.qcademy.tasks.oop.AbstrakteKlasseUebung;
 
-
-
-public class AppFahrzeug {
+public class AppAuto {
     public static void main(String[] args) {
-       Autonew meinAuto = new Autonew("Opel", 4);
-        Motorrad meinMotorrad = new Motorrad("BMW", 2);
-
-        meinAuto.anzeigenMarke();
-        meinAuto.starten();
-        meinAuto.fährt();
-            for (int i = 0 ; i <= 50; i++) {
-                System.out.println("Beschleunigung auf: " + i + " km/h");
-                if ( i == 50) {
-                    meinAuto.bremsen();
-                }
-
-            }
+        Autonew Toyota = new Autonew("xyz-1", 4000);
+        Autonew Ferrari = new Autonew("abc1", 5000);
 
 
-        meinMotorrad.anzeigenMarke();
-        meinMotorrad.starten();
-        meinMotorrad.fährt();
-            for (int i = 0 ; i <= 50; i++) {
-                System.out.println("Beschleunigung auf: " + i + " km/h");
-                    if ( i == 50) {
-                        meinMotorrad.bremsen();
-                    }
-                }
-            }
-        }
 
+     //Autos Methoden also Funktionen fahren und tanken und zuweisung von Werten an Variablen
+        Toyota.tanken(20);
+        Toyota.fahren(100);
+
+        Ferrari.tanken(20);
+        Ferrari.fahren(100);
+
+        //nach 100 km Fahrt
+        System.out.println("km " + Toyota.anzahlTueren);
+        System.out.println("km " + Ferrari.anzahlTueren);
+        System.out.println("Kraftstoffmenge " + Toyota.kraftstoffmenge);
+        System.out.println("Kraftstoffmenge " + Ferrari.kraftstoffmenge);
+
+    }
+}
