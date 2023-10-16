@@ -1,7 +1,6 @@
-package OOP.BuchundAutor;
+package at.qcademy.tasks.oop.BuchundAutor;
 
 
-import OOP.Person.Person;
 
 public class AppBuch {
 

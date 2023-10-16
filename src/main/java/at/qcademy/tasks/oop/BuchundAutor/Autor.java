@@ -1,4 +1,4 @@
-package OOP.BuchundAutor;
+package at.qcademy.tasks.oop.BuchundAutor;
 
 public class Autor {
         public String name;

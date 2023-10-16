@@ -1,4 +1,4 @@
-package OOP.BuchundAutor;
+package at.qcademy.tasks.oop.BuchundAutor;
 
 import java.util.ArrayList;
 import java.util.List;
