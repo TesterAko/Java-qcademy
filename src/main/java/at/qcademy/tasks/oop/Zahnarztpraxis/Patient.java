@@ -2,12 +2,9 @@ package at.qcademy.tasks.oop.Zahnarztpraxis;
 
 
 import java.time.LocalDate;
-import java.util.Random;
+
 
 public class Patient {
-    // Attribute__________________________Definierung der Attribute, was gehört zum Patienten
-
-    Random random = new Random();
 
     private int patientenNr;
     private String name;
@@ -54,10 +51,7 @@ public class Patient {
             System.out.println("Nein");
         }
         return false;
-/**
- *  return-Anweisung beendet die Methode und gibt einen Wert zurück.
- *  Alles, was nach der return-Anweisung kommt, wird nicht ausgeführt!!!
- */
+
     }
 
     public void setVersichertenName(String versichertenName) {
