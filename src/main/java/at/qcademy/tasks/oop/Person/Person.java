@@ -6,28 +6,25 @@ public class Person {
 
     public static int mindestGeburtsjahr = 1990;//static attribute
 
-    private String vorname1;
+    private String vorname;
     private String nachname;
     LocalDate geburtsDatum;
     double gewicht;
 
-    public Person(String vorname, String nachname, double gewicht, LocalDate geburtsDatum) {
-        this.vorname1 = vorname;
+     public Person(String vorname, String nachname, LocalDate geburtsDatum, double gewicht) {
+        this.vorname = vorname;
         this.nachname = nachname;
         this.geburtsDatum = geburtsDatum;
         this.gewicht = gewicht;
     }
 
-    Person(String vorname, String nachname, LocalDate geburtsDatum) {
-        this(vorname, nachname, 0, geburtsDatum);
-    }
-
     Person(String vorname, String nachname) {
-        this(vorname, nachname, null);
+        this.vorname = vorname;
+        this.nachname = nachname;
     }
 
     Person(String nachname) {
-        this(null, nachname);
+        this.nachname = nachname;
     }
 
     public int alter() {
@@ -43,8 +40,7 @@ public class Person {
 
    @Override
     public String toString() {
-        return "{\"vorname\": \"" + vorname1 + "\", \"nachname\": \"" + nachname + "\", \"gewicht\": " + gewicht + ", \"geburtsDatum\": \"" + geburtsDatum + "\"};";
-        //wenn ich ausgabe in Json will
+        return "{\"vorname\": \"" + vorname + "\", \"nachname\": \"" + nachname + "\", \"gewicht\": " + gewicht + ", \"geburtsDatum\": \"" + geburtsDatum + "\"};";
     }
 
     public void abnahme(double kg) {
@@ -52,7 +48,7 @@ public class Person {
     }
 
     public String getVorname() {
-        return vorname1;
+        return vorname;
     }
 
     public String getNachname() {
@@ -60,7 +56,7 @@ public class Person {
     }
 
     public String setVorname(String vorname) {
-        return vorname1 = vorname;
+        return vorname = vorname;
 
     }
 }

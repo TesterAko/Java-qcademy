@@ -1,5 +1,5 @@
 package at.qcademy.tasks.oop.Person.reserve;
-
+/**
 import java.time.LocalDate;
 
 public class Person {
@@ -27,17 +27,17 @@ public class Person {
         this.nachname = nachname;
         this.geburtsDatum = geburtsDatum;
         this.gewicht = gewicht;
-        /**this dient dazu, die Unterscheidung zwischen Instanzvariablen (Attributen) und lokalen Variablen zu ermöglichen, wenn beide denselben Namen haben
+        this dient dazu, die Unterscheidung zwischen Instanzvariablen (Attributen) und lokalen Variablen zu ermöglichen, wenn beide denselben Namen haben
          Wenn du this verwendest, wird es offensichtlich, dass du auf die Instanzvariable zugreifst und ihr einen Wert zuweist.
          Weil Konstruktionsparameter gleich wie Instanzvariablen heißen, kannst du mit this auch die Instanzvariablen zugreifen ohne Parameter anders nennen zu müssen**/
-    }
-    //___________________________________________________________________________________________________________________________________________
+   /** }
+    ___________________________________________________________________________________________________________________________________________
 
-    /**
+
      * Überladen der Konstruktor, das heißt man bietet verschiedene Arten von Konstruktoren, diese Unterscheiden sich in der Signatur (Parameterliste)
      * bspw. Person(String vorname, String nachname, LocalDate geburtsDatum)
      * hiermit kann ich 3 verschiedene Personen erstellen die verschiedene Werte beinhalten, mehr dazu in der Main Methode
-     **/
+
     Person(String vorname, String nachname, LocalDate geburtsDatum) {//String vorname, vorname Konstruktor-Parameter in diesem Fall
         this(vorname, nachname, 0, geburtsDatum);
         // mit this.("Parametern des vorherigen Konstruktors") rufe ich den vorherigen Konstuktor auf
@@ -49,14 +49,14 @@ public class Person {
         this(vorname, nachname, null);
        /* this.nachname = nachname;
         this.geburtsDatum = geburtsDatum;
-        this.gewicht = 0.0;*/
+        this.gewicht = 0.0;
     }
 
     Person(String nachname) {//String vorname, vorname Konstruktor-Parameter in diesem Fall
         this(null, nachname);
        /* this.vorname = vorname;
         this.nachname = nachname;
-        */
+
     }
 
     //bei komplexen Datentypen definiert Java, wenn sie nicht gesetzt sind mit NULL
@@ -67,7 +67,7 @@ public class Person {
         this.nachname = null;
         this.geburtsDatum = null;
         this.gewicht = 0.0;
-        */
+
     }
     //Default Constructor das heißt; Java erzeugt Default Constructor mit einer leeren Parameterliste
     //public Person() {}
@@ -77,7 +77,7 @@ public class Person {
     //Factory Methoden
     /* sind Methoden die man erzeugt, um Instanzen von der Klasse zu erstellen
     sind immer static Methoden!
-    */
+
 
     public static Person createPerson(String vorname, String nachname, LocalDate geburtsDatum, double gewicht) {
         return new Person(vorname, nachname, gewicht, geburtsDatum);
@@ -100,7 +100,7 @@ public class Person {
      * //return;
      * //return-typ ist immer ein Datentyp/ Rückgabe- ende der Ausführung
      * Wenn keine Rückgabe, dann ist der Rückgabetyp void!
-     **/
+
     //_____________________________________________________________________________________________________________________
     public int alter() {
         int jetzigesJahr = LocalDate.now().getYear(); //now gibt immer jetzt die aktuelle Zeit zurück//get Year gibt aktuelle Jahr zurück
@@ -114,20 +114,20 @@ public class Person {
     }
     //Methode überladen________________________________________________________________________________________________
 
-    /**
+
      * Unterscheidung erfolgt durch Parameterliste!!!!
      * public void zunahme(int kg) {
      * gewicht += kg;
      * }
-     */
-    /*oder besser________________________________________________________________________________________________
+
+    oder besser________________________________________________________________________________________________
     public void zunahme(int kg) {
         this.zunahme((double)kg);
         //mit this kann ich wieder auf die vorherigen Parametern zugreifen
         //wenn ich das hier machen will, dann muss ich das hier auch ändern
 
         //bei this.zunahme(kg) wäre es eine endlose Rekursion!! Aufpassen bei Parametern !!
-    }*/
+    }
     //________________________________________________________________________________________________________________
 
     //Methode überschreiben____________________________________________________________________________________________
@@ -137,7 +137,7 @@ public class Person {
         return "{\"vorname\": \"" + vorname1 + "\", \"nachname\": \"" + nachname + "\", \"gewicht\": " + gewicht + ", \"geburtsDatum\": \"" + geburtsDatum + "\"};";
         //wenn ich ausgabe in Json will
     }
-    /**
+
      * Man bietet dieselbe Methode aber in einer erbende Klasse!
      * JEDE KLASSE IN JAVA ERBT AUTOMATISCH VON DER KLASSE OBJECT
      * --> Object IST EINE Basisklasse in Java
@@ -145,7 +145,7 @@ public class Person {
      * toString um ein Objekt in einen String umzuwandeln
      *
      * @param
-     */
+
 
     //________________________________________________________________________________________________________________
     //Wenn bspw. Person abnimmt
@@ -154,10 +154,10 @@ public class Person {
     }
     //________________________________________________________________________________________________________________
     //GETTER
-    /**
+
      * um auf private Attribut zuzugreifen, bzw. ausgeben lassen
      * bspw.:
-     */
+
 
     public String getVorname() {
         return vorname1;
@@ -168,14 +168,13 @@ public class Person {
     }
 
     //SETTER
-    /**
+
      * um auf private Attribut neue Werte zu setzen, bzw. ausgeben lassen
      * bspw.:
-     */
+
     public String setVorname(String vorname) {
         return vorname1 = vorname;
 
     }
 
-}
-
+}**/

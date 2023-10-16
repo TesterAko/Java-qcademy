@@ -3,8 +3,8 @@ package at.qcademy.tasks.oop.Person.reserve;
 
 public class Main {
 
-    public static void main(String[] args) {
-        /*Person Ekrem = new Person("Ekrem", "Gedik", LocalDate.of(1992, 12,25), 95.00);
+   /* public static void main(String[] args) {
+        Person Ekrem = new Person("Ekrem", "Gedik", LocalDate.of(1992, 12,25), 95.00);
         new neue Person(in diesem Fall) von der Klasse
         LocalDate.of: Diese Methode wird verwendet, um eine neue LocalDate-Instanz zu erstellen
         die ein spezifisches Datum darstellt. Sie ermöglicht es dir, das Jahr, den Monat und den Tag als Argumente anzugeben, um ein Datum zu erstellen.
@@ -53,4 +53,3 @@ public class Main {
         //Ekrem.zunahme(10);
         //System.out.println(Ekrem.setVorname("Ako"));//Setter angewendet - Name aus Private neu gesetzt
     }
-}
