@@ -19,14 +19,11 @@ public class AppBuch {
         System.out.println(buch3.toString());
 
         bibliothek.buchHinzufuegen(buch1);//um Methode im Main auszuführen Klassenname.Methodenname(Produktklasse);
-        bibliothek.buchHinzufuegen(buch1);
+        bibliothek.buchHinzufuegen(buch3);
 
         bibliothek.buchZurueckGeben(buch2);
         bibliothek.buchLoeschen("Titel1");//Ausleihen mit String titel selbst eingeben
         bibliothek.buchAusleihen("Titel2");
-
-
-
 
     }
 }

@@ -15,7 +15,7 @@ public class Bibliothek {
     //Methoden________________________________________________________________
     public void buchHinzufuegen(Buch buch) {
         buchListe.add(buch);//buch wird hinzugefügt
-        System.out.println("Buch mit Titel " + buch.titel + " wurde hinzugefügt.");
+        System.out.println("Buch mit Titel " + buch.getTitel() + " wurde hinzugefügt.");
     }
 
     public void buchAusleihen(String titel) {
@@ -36,7 +36,7 @@ public class Bibliothek {
 
     public void buchZurueckGeben(Buch buch) {
         buchListe.add(buch);//buch wird zurückgegeben
-        System.out.println("Buch mit Titel " + buch.titel + " zurückgegeben.");
+        System.out.println("Buch mit Titel " + buch.getTitel() + " zurückgegeben.");
 
     }
 
