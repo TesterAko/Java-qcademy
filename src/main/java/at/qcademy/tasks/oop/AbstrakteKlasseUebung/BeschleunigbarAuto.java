@@ -1,12 +1,12 @@
 package at.qcademy.tasks.oop.AbstrakteKlasseUebung;
 
-public interface Beschleunigbar {
+public interface BeschleunigbarAuto {
 
-    public void beschleunigen();
+    public void autoBeschleunigen();
 
-    public void fährt();
+    public void autoFaehrt();
 
-    public void bremsen();
+    public void autoBremst();
 }
 
 

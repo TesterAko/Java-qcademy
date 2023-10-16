@@ -15,14 +15,9 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.transferwise.tasks</groupId>
-            <artifactId>tw-tasks-executor</artifactId>
-            <version>1.0.7</version>
-        </dependency>
-        <dependency>
-            <groupId>com.transferwise.tasks</groupId>
-            <artifactId>tw-tasks-executor</artifactId>
-            <version>1.0.7</version>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
         </dependency>
     </dependencies>
 

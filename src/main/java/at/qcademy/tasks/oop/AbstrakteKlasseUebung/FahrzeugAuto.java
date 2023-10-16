@@ -1,16 +1,16 @@
 package at.qcademy.tasks.oop.AbstrakteKlasseUebung;
 
-    abstract class FahrzeugMotorrad {
+    abstract class FahrzeugAuto {
 
         public String marke;
 
 
-        public abstract void starten(String marke);
+        public abstract void autoStarten();
 
-        public void anzeigenMarke(String marke) {
+        public void anzeigenMarkeAuto() {
             System.out.println("Marke: " + marke);
         }
 
-        public abstract void starten();
+
     }
 

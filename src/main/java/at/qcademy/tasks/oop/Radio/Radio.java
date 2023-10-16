@@ -8,7 +8,7 @@ public class Radio {
     int lautStärke = 2;
 
     double frequenz = 98.4;
-
+    //nicht statisch weil diese Werte sich ändern können
 
     //Konstruktor
     public Radio(boolean radioAn, int lautStärke, double frequenz) {
@@ -21,7 +21,7 @@ public class Radio {
     //lauter
     public void radioLauter() {
         if (radioAn == true) {//wenn radioAn true ist dann
-            if (lautStärke <= 10) {//wenn lautstärke kleiner gleich 10
+            if (lautStärke >= 0 || lautStärke <= 10) {//wenn lautstärke kleiner gleich 10
                 lautStärke += 1;//lautstärke wird 1 erhöht
             }
         }
@@ -31,7 +31,7 @@ public class Radio {
     //leiser
     public void radioLeiser() {
         if (radioAn == true) {//wenn radioAn true ist dann
-            if (lautStärke <= 10) {//wenn lautstärke kleiner gleich 10
+            if (lautStärke >= 0 || lautStärke <= 10) {//wenn lautstärke kleiner gleich 10
                 lautStärke -= 1;//lautstärke wird 1 verringert
 
             }
@@ -39,12 +39,15 @@ public class Radio {
     }
 
     //an aus
-    public void radioEinAus() {
-        radioAn = !radioAn;
-        // wenn radioAn true ist dann wird es false
-        // und wenn false dann true
+    public void radioEin() {
+        radioAn = true;
+
     }
 
+    public void radioAus() {
+        radioAn = false;
+
+    }
     //ZustandRadio
     @Override
     public String toString() {
