@@ -1,11 +1,12 @@
-package OOP.Zahnarztpraxis;
+package at.qcademy.tasks.oop.Zahnarztpraxis;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Krankenkasse {
     private int kassennummer;
     private String kassenname;
-    private ArrayList<Patient> patienten;
+    private List<Patient> patienten;
     public Krankenkasse(int kassennummer, String kassenname) {
         this.kassennummer = kassennummer;
         this.kassenname = kassenname;
@@ -20,8 +21,8 @@ public class Krankenkasse {
         return kassenname;
     }
 
-    public ArrayList<Patient> getPatienten() {
-        return patienten;
+    public List<Patient> getPatienten() {
+        return (List<Patient>) patienten;
     }
 
     public void addPatient(Patient patient) {

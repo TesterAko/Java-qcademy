@@ -5,10 +5,8 @@ public class Bankkonto { //Attribute Bankkonto
     String nachname;
     int kontoNr;
     double kontoStand;
-    double limit;//habe nicht static ausgewählt da jeder Kunde anderen Limit haben könnte
-    //sonst static double limit = 1000; bspw.
+    double limit;
 
-    //Konstruktor_________________________ Erstellung eines Bankkontos
     public Bankkonto(String vorname, String nachname, int kontoNr, double kontoStand, double limit) {
         this.vorname = vorname;
         this.nachname = nachname;
@@ -17,9 +15,6 @@ public class Bankkonto { //Attribute Bankkonto
         this.limit = limit;
     }
 
-    //Methoden________________________________ Was kann das Bankkonto?
-
-    //Kontostand abfragen
     public String toString () {
         return ("vorname: " + vorname + "\n" + "nachname: " + nachname + "\n"
                 + "kontoNr: " + kontoNr + "\n" + "kontoStand: " + kontoStand + "\n" + "limit: " );

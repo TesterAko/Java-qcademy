@@ -1,4 +1,4 @@
-package OOP.Zahnarztpraxis;
+package at.qcademy.tasks.oop.Zahnarztpraxis;
 
 
 import java.time.LocalDate;
