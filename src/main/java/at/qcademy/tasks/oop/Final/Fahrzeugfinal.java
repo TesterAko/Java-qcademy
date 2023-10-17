@@ -30,6 +30,6 @@ public abstract class Fahrzeugfinal implements Jsonfiable {
 
     @Override
     public String toJson() {
-        return "{\"farbe\": \""+this.farbe+"\", \"kmStand\": \""+this.kmStand+"\", \"kraftstoff\": \""+this.kraftstoff+"\", \"ps\": \""+this.ps+"\", \"baujahr\": \""+this.baujahr+"\"";
+        return "{\"farbe\": \"" + this.farbe + "\", \"kmStand\": \"" + this.kmStand + "\", \"kraftstoff\": \"" + this.kraftstoff + "\", \"ps\": \"" + this.ps + "\", \"baujahr\": \"" + this.baujahr + "\"}";
     }
 }

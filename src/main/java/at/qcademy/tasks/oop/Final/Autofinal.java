@@ -1,6 +1,6 @@
 package at.qcademy.tasks.oop.Final;
 
-public class Autofinal extends Fahrzeugfinal {
+public class Autofinal extends Fahrzeugfinal implements Jsonfiable {
 
     private String stossDaempfer;
 
@@ -14,15 +14,17 @@ public class Autofinal extends Fahrzeugfinal {
         this.stossDaempfer = sd;
     }
 
+
     @Override
     public String toJson() {
-        return "{\"stossDaempfer\": \"" + this.stossDaempfer + "\", \" fahrzeug\": " + super.toJson() + "}";
+        return "{\"stossDaempfer\": \"" + this.stossDaempfer + "\", \"fahrzeug\": " + super.toJson() + "}";
     }
 
     @Override
     public String toString() {
         return this.toPrettyJson();
     }
+
     public static void main(String[] args) {
         Autofinal auto = new Autofinal("rot", 100, 1999, "stossDaempfer");
         System.out.println(auto);

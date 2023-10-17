@@ -8,7 +8,7 @@ import com.google.gson.JsonParser;
 public interface Jsonfiable {
     String toJson();
 
-    default String toPrettyJson() {
+     default String toPrettyJson() {
         JsonElement json = JsonParser.parseString(toJson());
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         return gson.toJson(json);
