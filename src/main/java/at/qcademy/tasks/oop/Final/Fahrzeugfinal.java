@@ -2,11 +2,11 @@ package at.qcademy.tasks.oop.Final;
 
 public abstract class Fahrzeugfinal implements Jsonfiable {
 
-    private String farbe;
+    protected String farbe;
     private double kmStand;
     private double kraftstoff;
-    private int ps;
-    private int baujahr;
+    protected int ps;
+    protected int baujahr;
 
     public Fahrzeugfinal(String farbe, double kmStand, double kraftstoff) {
         this.farbe = farbe;

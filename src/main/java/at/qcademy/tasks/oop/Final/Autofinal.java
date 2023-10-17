@@ -25,11 +25,20 @@ public class Autofinal extends Fahrzeugfinal implements Jsonfiable {
         return this.toPrettyJson();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Autofinal)) return false;
+        Autofinal other = (Autofinal) obj;
+        boolean gleicheStossDaempfer = this.stossDaempfer.equalsIgnoreCase(other.stossDaempfer);
+        boolean gleichesBauJahr = this.baujahr == other.baujahr;
+        return gleicheStossDaempfer && gleichesBauJahr;
+    }
     public static void main(String[] args) {
         Autofinal auto = new Autofinal("rot", 100, 1999, "stossDaempfer");
+        Autofinal auto2 = new Autofinal("rot", 100, 1999, "stossDaempfer");
         System.out.println(auto);
+        System.out.println(auto.equals(auto2));
     }
-
 }
 
 
